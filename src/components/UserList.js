@@ -120,7 +120,7 @@ const UserList = () => {
       <h1>User List</h1>
       {error && <p style={{ color: "red" }}>{error}</p>} {/* Display error message */}
       <button onClick={() => setModalIsOpen(true)}>Add New User</button>
-      <table border="1" style={{ width: "100%", textAlign: "left" }}>
+      <table border="1" style={{ width: "100%", textAlign: "left", overflow-x:"auto"}}>
         <thead>
           <tr>
             <th>ID</th>
