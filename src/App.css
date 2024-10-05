@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Container for the app */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+th, td {
+  padding: 10px;
+  border: 1px solid #502e2e;
+  text-align: left;
+
+  
+}
+
+
+th {
+  background-color: #d00f0f;
   color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Button Styles */
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #ae0a0a;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Modal Styles */
+
+
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.ReactModal__Content {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
+  
+}
+
+/* src/App.css */
+
+/* Add this section to your existing CSS */
+.view-details-link {
+  color: blue; /* Default color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.view-details-link:visited {
+  color: blue; /* Keep the same color after visit */
+}
+
+/* Optional: Change color on hover */
+.view-details-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+
+  th, td {
+    padding: 8px;
+
+  }
+
+  button {
+    padding: 8px 10px;
+  }
+
+  .container {
+    padding: 10px;
   }
 }
