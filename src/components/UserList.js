@@ -120,6 +120,7 @@ const UserList = () => {
       <h1>User List</h1>
       {error && <p style={{ color: "red" }}>{error}</p>} {/* Display error message */}
       <button onClick={() => setModalIsOpen(true)}>Add New User</button>
+     <div style={{"overflow-x":"auto"}}>
       <table border="1" style={{ width: "100%", textAlign: "left", overflow-x:"auto"}}>
         <thead>
           <tr>
@@ -148,6 +149,7 @@ const UserList = () => {
           ))}
         </tbody>
       </table>
+              </div>
 
       <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
         <h2>{editingUser ? "Edit User" : "Create New User"}</h2>
