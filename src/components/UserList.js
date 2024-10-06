@@ -149,7 +149,7 @@ const UserList = () => {
           ))}
         </tbody>
       </table>
-              </div>
+    </div>
 
       <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
         <h2>{editingUser ? "Edit User" : "Create New User"}</h2>
